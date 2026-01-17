@@ -24,11 +24,9 @@ struct CoinRowView: View {
     }
 }
 
-struct CoinRowView_Previews: PreviewProvider {
-    static var previews: some View {
-        CoinRowView(coin: dev.coin, showHoldings: true)
-            .previewLayout(.sizeThatFits)
-    }
+#Preview(traits: .sizeThatFitsLayout) {
+    CoinRowView(coin: DeveloperPreview.preview.coin, showHoldings: true)
+        
 }
 
 extension CoinRowView{

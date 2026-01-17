@@ -17,6 +17,7 @@ extension PreviewProvider{
 class DeveloperPreview {
     static let preview = DeveloperPreview()
     private init() {}
+    let homevm = HomeViewModel()
     let coin = CoinModel(
        id: "bitcoin",
        symbol: "btc",
